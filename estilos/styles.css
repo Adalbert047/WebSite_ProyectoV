@@ -529,7 +529,7 @@ button a
 
 
 
-@media  (max-width: 500px)
+@media  (max-width: 600px)
 {
 
     .container-principal
@@ -627,6 +627,9 @@ button a
     .container-principal-problematica-1
     {
         margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
     }
     .titulo-2
     {
