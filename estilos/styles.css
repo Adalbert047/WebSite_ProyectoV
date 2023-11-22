@@ -9,8 +9,35 @@
 {
     gap: 40px;
 }
+.menu-oculto
+{
+    height: 50px;
+    display: flex;
+}
+#check
+{
+    height: 10px;
+    width: 10px;
+    display: none;
+}
+.checkbtn
+{
+    margin: 0px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    display: none;
+    
+   
+}
+.menu-image
+{
+    width: 100%;
+    height: 100%;
+}
 .container-principal-primer
 {
+    /* height: 60px; */
     display: flex;
     justify-content: space-between;
     /* border: 2px solid black; */
@@ -18,7 +45,7 @@
 }
 .Menu-principal{
     /* border: 2px solid green; */
-    margin: 0px 0px 0px 60px;
+    /* margin: 0px 0px 0px 10px; */
 }
 .Menu-principal .menu{
     list-style-type: none;
@@ -469,6 +496,7 @@ button a
     height: 800px;
     margin: 30px auto;
 }
+
 .footer-final
 {
     padding: 20px 0px;
@@ -498,19 +526,20 @@ button a
     width: 100%;
     text-align: center;
 }
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 
-
-@media  (max-width: 600px)
+@media  (max-width: 500px)
 {
+
+    .container-principal
+    {
+        width: 100%;
+    }
     .container-principal-primer
     {
-        height: 80px;
+        margin: 10px 15px;   
+        justify-content: space-between;
     }
     .Menu-principal
     {
@@ -521,10 +550,14 @@ img {
         position: fixed;
         width: 50%;
         height: 100%;
-        background-color: #29ABE2;
+        left: -100%;
+        background-color: #cee3f0;
         transition: all .5s;
-        /* left: -100%; */
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin: 40px 0px;
     }
     .menu li
     {
@@ -536,12 +569,17 @@ img {
     .menu li a 
     {
         font-size: 20px;
-
+        height: 20%;
+    }
+    .menu li a:active
+    {
+        background-color: #E0F2FF;
+        height: 50px
     }
     .Btns1
     {
 
-        margin: 10px;
+        margin: 0px 0px 0px 0px;
         gap: 20px;
         
     }
@@ -551,4 +589,154 @@ img {
         font-size: 0.6rem;
         height: 50px;
     }
+    .checkbtn
+    {
+        display: block;
+        margin: 20px;
+        
+    }
+
+    #check:checked ~ .menu{
+        left: 0;
+    }
+    .container-principal-ARISolu-presen
+    {
+        width: 100%;
+        margin: 0px;
+        
+    }
+    .titulo
+    {
+        padding: 10px 0px 0px 30px !important;
+        font-size: 1.5em !important;
+    }
+    .Descripcion p
+    {
+        font-size: 1.3em !important;
+    }
+    .Descripcion button
+    {
+        width: 30%;
+        font-size: 0.7em !important;
+    }
+    .img  
+    {
+        width: 30%;
+        height: 30%;
+    }
+    .container-principal-problematica-1
+    {
+        margin: 0px 0px 0px 0px;
+    }
+    .titulo-2
+    {
+        font-size: 1.5em !important;
+        width: 100%;
+    }
+    .Descripcion-2
+    {
+        margin: 50px 0px;
+        width: 100%;
+    }
+    .Descripcion-2 p:nth-child(2)
+    {
+        font-size: 0.7em !important;
+    }
+    .puntos-problematicos p
+    {
+        padding: 0px;
+        font-size: 0.5em !important;
+    }
+    .titulo-3
+    {
+        font-size: 1.3em !important;
+        height: 20px;
+    }
+    .container-segundo-primer-descripcion 
+    {
+        height: 260px;
+    }
+    .container-segundo-primer div:first-child
+    {
+        height: 30px;
+    }
+    .container-segundo-primer-container
+    {
+        margin: 40px 0px;
+        
+    }
+    .container-segundo-primer-descripcion .Descripcion
+    {
+        font-size: 1.3em !important;
+
+    }
+    .container-segundo-primer-descripcion .texto
+    {
+        font-size: 0.7em !important;
+    }
+    .container-imagenes-titulo-primero p 
+    {
+
+        font-size: 1.3em !important;
+    }
+    .pie-pagina1, .pie-pagina2
+    {
+        font-size: 1.3em !important;
+
+    }
+    .titulo-4, .titulo-maps
+    {
+        width: 100%;
+        font-size: 1.5em !important;
+    }
+    .imgARI2
+    {
+        width: 40%;
+        height: 40%;
+    }
+    .texto2 p 
+    {
+        font-size: 0.7em !important;
+    }
+    .texto p 
+    {
+        width: 100%;
+        font-size: 0.7em !important;
+    }
+    .img-Maps 
+    {
+        width: 55%;
+        height: 60%;
+    }
+    .titulo5 
+    {
+        font-size: 1.3em !important;
+        color: #061F57;
+
+    }
+    .texto3 p
+     {
+        font-size: 0.7em !important;
+     }
+     .dashboard
+     {
+        width: 100%;
+        height: 60%;
+     }
+     .puntos-problematicos2 p 
+     {
+        font-size: 0.7em !important;
+     }
+     .footer-final
+     {
+        font-size: 0.7em;
+     }
+     .filas .columnas 
+
+     {
+        margin: 10px 70px 0px 0px;
+        width: 100px;
+     }
+    
+    
 }
