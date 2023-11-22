@@ -4,8 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="estilos/styles.css">
 </head>
 <body>
-    
+    <div class="main-container">
+        <div class="menus-container">
+            <button class="close-btn" id="closeBtn">×</button>
+            <ul class="menus">
+                <li>
+                    <div class="search">
+                        <div class="img-search">
+                            <img src="./estilos/imagenes/search.png" alt="img not found">
+                        </div>
+                        <div class="input-search">
+                            <input type="text" placeholder="Buscar">
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="users">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/group.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Usuarios</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="estado">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/in-stock.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Estado</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="locations">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/location.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Ubicaciones</a>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="add">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/add.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Añadir ARI</a>
+                        </div>
+                    </div>
+                    
+                </li>
+                <li class="add-location">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/add.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Añadir Ubicaciones</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dashboard">
+                    <div class="menu-style">
+                        <div class="menu-img-style">
+                            <img src="./estilos/imagenes/home.png" alt="img not found">
+                        </div>
+                        <div class="menu-name-style">
+                            <a href="">Dashboard</a>                            
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="top-page">
+            <div class="top-top">
+                <button class="menu-btn" id="menuBtn"><img src="./estilos/imagenes/menu.png" alt="img not found"></button>
+                <div class="name">
+                    <p>ARISOLUTIONS</p>
+                </div>
+                <div class="account">
+                    <button>
+                        <div class="account-img">
+                            <img src="./estilos/imagenes/profile.png" alt="img not found">                            
+                        </div>
+                        <div class="account-text">
+                            <p>ADMIN</p>
+                        </div>
+                        <div class="account-options">
+                            <img src="./estilos/imagenes/down-arrow_w.png" alt="img not found">
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div class="top-bottom">
+                <div class="conf-buttons">
+                    <button class="conf">
+                        Configuración
+                        <img src="./estilos/imagenes/down-arrow.png" alt="img not found" class="confimg">
+                    </button>
+                    <button class="reporte">Reporte</button>
+                </div>
+                <div class="help-button-container">
+                    <button class="help-button">?</button>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <div class="info">
+                <div class="info-title">
+                    <p>Información</p>
+                </div>
+                <div class="info-content">
+                    <div class="info-name">
+                        <div><p>Id</p></div>
+                        <div><input type="text"></div>
+                    </div>
+                    <div class="info-name">
+                        <div><p>Estado</p></div>
+                        <div class="state-button">
+                            <input type="text" placeholder=" --Select--"></input>
+                        </div>
+                    </div>
+                    <div class="info-name">
+                        <div><p>Ubicacion</p></div>
+                        <div><input type="text"></div>
+                    </div>
+                    <div class="info-name">
+                        <div><p>Modulo</p></div>
+                        <div><input type="text"></div>
+                    </div>
+                </div>
+                <div class="info-buttons">
+                    <div>
+                        <button class="ib-restart">Reiniciar</button>
+                        <button class="ib-search">Buscar</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="records">
+                <div class="records-content">
+                    <div class="records-add-button">
+                        <button>
+                            <p>Añadir</p>
+                        </button>
+                    </div>
+                    <div class="records-found">
+                        <p>Id</p>
+                        <p>Estado</p>
+                        <p>Ubicación</p>
+                        <p>Módulo</p>
+                    </div>
+                    <div class="data">
+                        <p>1</p>
+                        <p>1</p>
+                        <p>Ingeniería</p>
+                        <p>1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./estilos/script.js"></script>
 </html>
