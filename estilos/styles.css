@@ -498,10 +498,57 @@ button a
     width: 100%;
     text-align: center;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
 @media  (max-width: 600px)
 {
-    
+    .container-principal-primer
+    {
+        height: 80px;
+    }
+    .Menu-principal
+    {
+        margin: 0px;
+    }
+    .menu
+    {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        background-color: #29ABE2;
+        transition: all .5s;
+        /* left: -100%; */
+        text-align: center;
+    }
+    .menu li
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px 0px;
+        line-height: 30px;
+    }
+    .menu li a 
+    {
+        font-size: 20px;
+
+    }
+    .Btns1
+    {
+
+        margin: 10px;
+        gap: 20px;
+        
+    }
+    .Btns1 button
+    {
+        width: 70px;
+        font-size: 0.6rem;
+        height: 50px;
+    }
 }
